@@ -1,0 +1,138 @@
+.card {
+    padding: 4rem 3rem;
+    background-color: $color-grey-light;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   
+    &__header {
+        width: 100%;
+        margin-bottom: 2rem; /* Add margin to create space between header and other content */
+
+        &__photo {
+            width: 100%; /* Ensure the image fills the entire header */
+            height: 30vh; /* Set a fixed height for the image */
+            object-fit: cover; /* Ensure the image covers the entire container */
+        }
+    }
+
+    &__title {
+        color: $color-primary;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__location {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__saletype {
+        font-size: 1.6rem;
+        color: $color-green;
+        margin-bottom: 0.5rem;
+    }
+
+    &__hometype {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__sqft {
+        font-size: 1.4rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        color: $color-secondary;
+        padding: 1rem 1.5rem;
+        border: 0.1rem solid $color-secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+            border: 0.1rem solid $color-secondary;
+            background-color: $color-primary;
+        }
+    }
+
+    /* Media Query for Small Screens (e.g., mobile devices) */
+    @media only screen and (max-width: 1000px) {
+        .card {
+            &__header__photo {
+                width: 80%; /* Reduce the width of the image on smaller screens */
+                height: 20vh; /* Adjust the height accordingly */
+            }
+        }
+    }
+}
+// .card {
+//     padding: 4rem 3rem;
+//     background-color: $color-grey-light;
+//     border-radius: 0.5rem;
+//     display: flex; /* Ensure the card contents align properly */
+//     flex-direction: column; /* Arrange the card contents in a column */
+//     align-items: center; /* Center align the card contents horizontally */
+//     text-align: center; /* Center align the text horizontally */
+
+//     &__header {
+//         width: 100%;
+//         margin-bottom: 2rem; /* Add margin to create space between header and other content */
+
+//         &__photo {
+//             width: 100%; /* Ensure the image fills the entire header */
+//             height: 30vh; /* Set a fixed height for the image */
+//             object-fit: cover; /* Ensure the image covers the entire container */
+//         }
+//     }
+
+//     &__title {
+//         color: $color-primary;
+//         font-size: 2.4rem;
+//         margin-bottom: 2rem;
+//     }
+
+//     &__location {
+//         font-size: 1.4rem;
+//         margin-bottom: 2rem; /* Add margin to create space between elements */
+//     }
+
+//     &__info,
+//     &__saletype,
+//     &__hometype,
+//     &__sqft {
+//         font-size: 1.6rem;
+//         color: $color-tertiary;
+//         margin-bottom: 0.5rem;
+//     }
+
+//     &__link {
+//         font-size: 1.6rem;
+//         color: $color-secondary;
+//         padding: 1rem 1.5rem;
+//         border: 0.1rem solid $color-secondary;
+//         text-decoration: none;
+
+//         &:hover {
+//             color: $color-white;
+//             border: 0.1rem solid $color-secondary;
+//             background-color: $color-primary;
+//         }
+//     }
+
+//     /* Media Query for Small Screens (e.g., mobile devices) */
+//     @media only screen and (max-width: 1000px) {
+//         &__header__photo {
+//             width: 80%; /* Reduce the width of the image on smaller screens */
+//             height: 20vh; /* Adjust the height accordingly */
+//         }
+//     }
+// }
